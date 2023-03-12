@@ -13,11 +13,12 @@ Date: 2023-03-24
 <a name="desc"></a>
 ## 1. Description and use case
 
-Hardware TinyML project with Arduino Nano 33 BLE Sense with the use of Edge Impulse. 
-What is TinyML? (cf. Warden, P., & Situnayake, D. 2019, S. x)
-How to use Tensorflow with Edge Impulse?
-How to use the ML model in Arduino IDE
-Password entry of handwritten digits by moving in the air to facilitate different activities in the daily life of visually impaired people, for example, to have the front door opened.
+Hardware TinyML project with Arduino Nano 33 BLE Sense with the use of Edge Impulse. <br>
+What is TinyML? TinyML enables the deployment and on-device processing of ML models into resource constrainted edge devices. This brings a lot of benefits like low latency, privacy, low power and reduced bandwidth (cf. Warden, P., & Situnayake, D. 2019, p. 3; Sharma, R. 2022, p. 12) In the past few years, a set of technologies have been developed that make it possible to run miniature, highly optimized machine learning models on low-power microcontrollers like the one described above. By using machine learning to interpret sensor data right at the source, embedded applications can become smarter, faster, and more energy efficient, making their own decisions rather than having to stream data to the cloud and wait for a response. This concept is known as embedded machine learning, or TinyML. (cf. Tensorflow 2023) <br>
+How to use Tensorflow with Edge Impulse? The Edge Impulse is an end-to-end suite of tooling that helps embedded engineers and domain experts build and test machine learning applications. Edge Impulse makes use of the TensorFlow ecosystem for training, optimizing, and deploying deep learning models to embedded devices. <br>
+Use case of the project?
+Password entry of handwritten digits by moving in the air to facilitate different activities in the daily life of visually impaired people, for example, to have the front door opened. <br>
+Goal of the project?
 
 <a name="work"></a>
 ## 2. Related work
@@ -40,6 +41,17 @@ Password entry of handwritten digits by moving in the air to facilitate differen
 * Edge Impulse
 * Arduino IDE
 
+### Deep Learning Workflow
+1. Decide on a goal
+2. Collect a dataset
+3. Design a model architecture
+4. Train the model
+5. Convert the model
+6. Run inference
+7. Evaluate and troubleshoot
+(cf. Warden, P., & Situnayake, D. 2019).
+
+
 ### Libraries
 * tbd
 
@@ -57,6 +69,7 @@ Password entry of handwritten digits by moving in the air to facilitate differen
 * Chen, L. (2022): A Wearable Real-Time Character Recognition System Based on Edge Computing-Enabled Deep Learning for Air-Writing, https://doi.org/10.1155/2022/8507706.
 * Edge Impulse (2023): Getting started, in: https://docs.edgeimpulse.com/docs/, (12.03.2023).
 * Preethi, K., & Chithra, S. (2018): On-Air Character Recognition System For Visually Impaired People. In International Conference for Phoenixes on Emerging Current Trends in Engineering and Management (PECTEAM 2018) (pp. 155-158). Atlantis Press.
+* Sharma, R. (2022): Introduction to TinyML, AI Technology & Systems Inc.
 * Tensorflow (2023): How TensorFlow helps Edge Impulse make ML accessible to embedded engineers, in: https://blog.tensorflow.org/2021/06/how-tensorflow-helps-edge-impulse-make-ml-accessible.html, (12.03.2023).
 * Tensorflow (2023a): How-to Get Started with Machine Learning on Arduino, in: https://blog.tensorflow.org/2019/11/how-to-get-started-with-machine.html, (12.03.2023).
 * Warden, P., & Situnayake, D. (2019): Tinyml. Machine learning with tensorflow lite on arduino and ultra-low-power microcontrollers. O'Reilly Media.
