@@ -19,10 +19,9 @@ What is TinyML? TinyML enables the deployment and on-device processing of ML mod
 How to use Tensorflow with Edge Impulse? The Edge Impulse is an end-to-end suite of tooling that helps embedded engineers and domain experts build and test machine learning applications. Edge Impulse makes use of the TensorFlow ecosystem for training, optimizing, and deploying deep learning models to embedded devices. <br>
 Use case of the project?
 Password entry of handwritten digits by moving in the air to facilitate different activities in the daily life of visually impaired people, for example, to have the front door opened. <br>
-Goal of the project?
+Goal of the project? and Description project plan
 
-
--> Add picture of project plan
+!["Project plan"](https://github.com/moellpau/HandwrittenDigitRecognition/blob/main/project_plan.png)
 
 <a name="work"></a>
 ## 2. Related work
@@ -58,9 +57,9 @@ All the named papers where used for inspiration and planning purposeses of the p
 ### Deep Learning Workflow
 1. Decide on a goal: Air-writing recognition of the digits 1, 2 and 3 with Arduino Nano 33 BLE Sense
 2. Collect a dataset 
-* Picture from hardware usage/training
+!["Template of digits" 1000 x 750](https://github.com/moellpau/HandwrittenDigitRecognition/blob/main/digit_template.JPG)
+!["Data collection process" 1000 x 750](https://github.com/moellpau/HandwrittenDigitRecognition/blob/main/hardware_usage.jpg)
 * Charts about training and test data and dominant/used hand
-* Picture of all digits and guide how to draw - start and end point and angle how to use device
 3. Design a model architecture
 * Structure ML model or screenshots Edge Impulse
 4. Train the model
