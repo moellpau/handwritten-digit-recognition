@@ -21,7 +21,8 @@ Use case of the project?
 Password entry of handwritten digits by moving in the air to facilitate different activities in the daily life of visually impaired people, for example, to have the front door opened. <br>
 Goal of the project? and Description project plan
 
-!["Project plan"](https://github.com/moellpau/HandwrittenDigitRecognition/blob/main/project_plan.png)
+!["project plan"](https://github.com/moellpau/HandwrittenDigitRecognition/blob/main/project_plan.png)
+<div align="center">Project plan</div>
 
 <a name="work"></a>
 ## 2. Related work
@@ -57,8 +58,12 @@ All the named papers where used for inspiration and planning purposeses of the p
 ### Deep Learning Workflow
 1. Decide on a goal: Air-writing recognition of the digits 1, 2 and 3 with Arduino Nano 33 BLE Sense
 2. Collect a dataset 
-!["Template of digits" 1000 x 750](https://github.com/moellpau/HandwrittenDigitRecognition/blob/main/digit_template.JPG)
-!["Data collection process" 1000 x 750](https://github.com/moellpau/HandwrittenDigitRecognition/blob/main/hardware_usage.jpg)
+
+![Template of digits](https://github.com/moellpau/HandwrittenDigitRecognition/blob/main/digit_template.JPG)
+<div align="center">Template of digits</div> <br>
+
+![Data collection process](https://github.com/moellpau/HandwrittenDigitRecognition/blob/main/hardware_usage.jpg)
+<div align="center">Data collection process</div>
 * Charts about training and test data and dominant/used hand
 3. Design a model architecture
 * Structure ML model or screenshots Edge Impulse
@@ -90,6 +95,7 @@ All the named papers where used for inspiration and planning purposeses of the p
 * add more digits and letters + sonderzeichen to make a passwort entry possible
 * possiblity to check and enter more than one digit etc.
 * connection/wifi to specific system like door lock etc.
+* custom sounds and words -> connect speaker to Arduino
 
 <a name="sour"></a>
 ## 6. Sources
