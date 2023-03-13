@@ -37,6 +37,7 @@ All the named papers where used for inspiration and planning purposeses of the p
 ## 3. Implementation and hardware setup
 
 * Picture system architecture
+* Activity diagram
 
 ### Hardware setup
 * Arduino Nano 33 BLE Sense
@@ -51,10 +52,13 @@ All the named papers where used for inspiration and planning purposeses of the p
 * Edge Impulse
 * Arduino IDE
 
+### Libraries
+* tbd
+
 ### Deep Learning Workflow
 1. Decide on a goal: Air-writing recognition of the digits 1, 2 and 3 with Arduino Nano 33 BLE Sense
 2. Collect a dataset 
-* Pcture from hardware usage/training
+* Picture from hardware usage/training
 * Charts about training and test data and dominant/used hand
 * Picture of all digits and guide how to draw - start and end point and angle how to use device
 3. Design a model architecture
@@ -69,9 +73,12 @@ All the named papers where used for inspiration and planning purposeses of the p
 * Confusion matrix of measuring accuracy
 (cf. Warden, P., & Situnayake, D. 2019).
 
+### How to execute
 
-### Libraries
-* tbd
+* Hardware setup wie oben abgebildet + mit Kochlöffel
+* Arduino initalisieren -> Tutorial verlinken
+* welche libraries und wann installieren
+* wie und wo den Code ausführen -> mit Screenshots hinterlegen
 
 <a name="trouble"></a>
 ## 4. Troubleshooting
