@@ -8,7 +8,8 @@ Date: 2023-03-24
 2. [ Related work ](#work)
 3. [ Implementation and hardware setup ](#impl)
 4. [ Troubleshooting ](#trouble)
-5. [ Sources ](#sour)
+5. [ Conclusion and future work ](#con)
+6. [ Sources ](#sour)
 
 <a name="desc"></a>
 ## 1. Description and use case
@@ -23,7 +24,8 @@ Goal of the project?
 <a name="work"></a>
 ## 2. Related work
 
-* Deep-Learning-Based Character Recognition from Handwriting Motion Data Captured Using IMU and Force Sensors (cf. Alemayoh, T. T. et al. 2022).
+As handwriting recognition (HWR) is a topic of growing interest in the research community which can solve a lot of real-world problems, there are a lot of successful papers. For HWR there are different approaches which can be using the cameras and scanners or using motion sensors. Alemayoh, T. T. et al. proposed with their paper a real-time air-wirting character recognition wearable system based on edge computing and deep learning. They could reach an accurary of 97.95 % with their approach of using an Arudino Nano 33 BLE sense and capturing motion data by inertial measurement units (IMUs). This is way more than any air-writing recognition with optical sensors could reach as there are around 90 % accuracy. Alemayoh, T. T. et al. use a five-layer CNN which has been converted into TensorFlow Lite format to run on Arduino Nano 33 BLE Sense to recognize 10 digits and 26 lower-case letters. For the data aquistion, 35 students of their institute were recruited to collect data for model training. This means there had people with different gender and dominant hand. (cf. Alemayoh, T. T. et al. 2022).
+
 * Handwriting Recognition in Free Space Using WIMU-Based Hand Motion Analysis (cf. Chai, Y. et al. 2016).
 * A Wearable Real-Time Character Recognition System Based on Edge Computing-Enabled Deep Learning for Air-Writing (cf. Chen, L. 2022).
 * On-Air Character Recognition System For Visually Impaired People. In International Conference for Phoenixes on Emerging Current Trends in Engineering and Management (cf.  Preethi, K., & Chithra, S. 2018).
@@ -31,24 +33,36 @@ Goal of the project?
 <a name="impl"></a>
 ## 3. Implementation and hardware setup
 
+* Picture system architecture
+
 ### Hardware setup
 * Arduino Nano 33 BLE Sense
 * Button
 * Power Bank
 * Speaker
 
+* Arduino in more detail - close-up
+* Picture from complete hardware structure
+
 ### Software tools
 * Edge Impulse
 * Arduino IDE
 
 ### Deep Learning Workflow
-1. Decide on a goal
-2. Collect a dataset
-3. Design a model architecture
-4. Train the model
-5. Convert the model
-6. Run inference
+1. Decide on a goal <br>
+recognition of digit 1,2,3 with Arudiono Nano 33 BLE Sense and air-writing
+2. Collect a dataset < br>
+* Pcture from hardware usage/training
+* Charts about training and test data and dominant/used hand
+* Picture of all digits and guide how to draw - start and end point and angle how to use device
+3. Design a model architecture <br>
+* Structure ML model or screenshots Edge Impulse
+4. Train the model <br>
+* Screenshots Edge Impulse
+5. Convert the model <br>
+6. Run inference <br>
 7. Evaluate and troubleshoot
+* Confusion matrix of measuring accuracy
 (cf. Warden, P., & Situnayake, D. 2019).
 
 
@@ -58,9 +72,15 @@ Goal of the project?
 <a name="trouble"></a>
 ## 4. Troubleshooting
 
+<a name="con"></a>
+## 5. Conclusion and future work
+
+* add more digits and letters + sonderzeichen to make a passwort entry possible
+* possiblity to check and enter more than one digit etc.
+* connection/wifi to specific system like door lock etc.
 
 <a name="sour"></a>
-## 5. Sources
+## 6. Sources
 
 
 * Alemayoh, T. T. et al. (2022): Deep-Learning-Based Character Recognition from Handwriting Motion Data Captured Using IMU and Force Sensors, https://doi.org/10.3390/s22207840.
