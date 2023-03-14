@@ -48,7 +48,6 @@ Before starting with the implementation and hardware setup, the whole process wa
 * Piezo element
 * Board
 
-<br>
 ![System architecture](https://github.com/moellpau/HandwrittenDigitRecognition/blob/main/images/system_architecture.jpeg)
 <div align="center"><i>Figure 3: System architecture</i></div>
 <br>
