@@ -95,8 +95,8 @@ Text about training and test data and dominant/used hand
   <img src="https://github.com/moellpau/HandwrittenDigitRecognition/blob/main/images/digit_template.jpg"
      height="170" />
 <div align="center"><i>Figure 6: Template of digits</i></div> <br>
-
 <br>
+
 **3. Design a model architecture** <br>
 Generating features from data,
 Screenshots Edge Impulse features and ML model <br>
