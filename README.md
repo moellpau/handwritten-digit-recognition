@@ -53,14 +53,14 @@ All the named papers where used for inspiration and planning purposeses of the p
 * Arduino IDE
 
 ### Libraries
-* tbd
+* own machine learning model library https://github.com/moellpau/HandwrittenDigitRecognition/blob/main/AirWriting_inferencing.zip
 
 ### Deep Learning Workflow
 **1. Decide on a goal** <br>
 Air-writing recognition of the digits 1, 2 and 3 with Arduino Nano 33 BLE Sense. This as a classification problem. Classification is a machine learning task that takes a set of input data and returns the probability that this data fits each of a set of known classes. In this example, there are three classes: number_1, number_2 and number_3.<br>
 <br>
 **2. Collect a dataset** <br>
-The data was collected using the hardware setup above and using the drawn digit template in Figure 2. How the hardware ws used can be seen in Figure 3 with the old setup.
+Identify data that is needed and create final dataset. The data was collected using the hardware setup above and using the drawn digit template in Figure 2. How the hardware ws used can be seen in Figure 3 with the old setup.
 
 ![Template of digits](https://github.com/moellpau/HandwrittenDigitRecognition/blob/main/images/digit_template.jpg)
 <div align="center"><i>Figure 2: Template of digits</i></div> <br>
@@ -72,15 +72,24 @@ The data was collected using the hardware setup above and using the drawn digit 
 Charts about training and test data and dominant/used hand  <br>
 <br>
 **3. Design a model architecture** <br>
-Structure ML model or screenshots Edge Impulse <br>
+Generating features from data,
+Screenshots Edge Impulse features and ML model <br>
 
 **4. Train the model** <br>
+Training is the process by which a model learns to produce the correct output for a given set of inputs. It involves feeding training data through a model and making small adjustments to it until it makes the most accurate predictions possible.
+<br>
+* Underfitting and Overfitting
+* Training, validation, and testing
 Screenshots Edge Impulse <br>
 
 **5. Convert the model** <br>
+Throughout this book, we use TensorFlow to build and train models. A TensorFlow model is essentially a set of instructions that tell an interpreter how to transform data in order to produce an output. When we want to use our model, we just load it into memory and execute it using the TensorFlow interpreter.
+However, TensorFlow’s interpreter is designed to run models on powerful desktop computers and servers. Since we’ll be running our models on tiny microcontrollers, we need a different interpreter that’s designed for our use case. Fortunately, Tensor‐ Flow provides an interpreter and accompanying tools to run models on small, low- powered devices. This set of tools is called TensorFlow Lite.
+Before TensorFlow Lite can run a model, it first must be converted into the Tensor‐ Flow Lite format and then saved to disk as a file. We do this using a tool named the TensorFlow Lite Converter. The converter can also apply special optimizations aimed at reducing the size of the model and helping it run faster, often without sacrificing performance.<br>
 Screenshots Edge Impulse <br>
 
 **6. Run inference** <br>
+After the model has been converted, it’s ready to deploy! We’ll now use the Tensor‐ Flow Lite for Microcontrollers C++ library to load the model and make predictions. <br>
 GIF how to use hardware setup and run inference <br>
 
 **7. Evaluate and troubleshoot** <br>
