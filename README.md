@@ -56,26 +56,35 @@ All the named papers where used for inspiration and planning purposeses of the p
 * tbd
 
 ### Deep Learning Workflow
-1. Decide on a goal: Air-writing recognition of the digits 1, 2 and 3 with Arduino Nano 33 BLE Sense
-2. Collect a dataset 
+**1. Decide on a goal** <br>
+Air-writing recognition of the digits 1, 2 and 3 with Arduino Nano 33 BLE Sense <br>
+<br>
+**2. Collect a dataset** <br>
+The data was collected using the hardware setup above and using the drawn digit template in Figure 2. How the hardware ws used can be seen in Figure 3 with the old setup.
 
-![Template of digits](https://github.com/moellpau/HandwrittenDigitRecognition/blob/main/images/digit_template.JPG)
+![Template of digits](https://github.com/moellpau/HandwrittenDigitRecognition/blob/main/images/digit_template.jpg)
 <div align="center"><i>Figure 2: Template of digits</i></div> <br>
 
 ![Data collection process](https://github.com/moellpau/HandwrittenDigitRecognition/blob/main/images/hardware_usage.jpg)
 <div align="center"><i>Figure 3: Hardware usage</i></div>
 <br>
-* Charts about training and test data and dominant/used hand
-3. Design a model architecture
-* Structure ML model or screenshots Edge Impulse
-4. Train the model
-* Screenshots Edge Impulse
-5. Convert the model
-* Screenshots Edge Impulse
-6. Run inference
-* Screenshots Edge Impulse
-7. Evaluate and troubleshoot
-* Confusion matrix of measuring accuracy
+
+Charts about training and test data and dominant/used hand  <br>
+<br>
+**3. Design a model architecture** <br>
+Structure ML model or screenshots Edge Impulse <br>
+
+**4. Train the model** <br>
+Screenshots Edge Impulse <br>
+
+**5. Convert the model** <br>
+Screenshots Edge Impulse <br>
+
+**6. Run inference** <br>
+GIF how to use hardware setup and run inference <br>
+
+**7. Evaluate and troubleshoot** <br>
+Confusion matrix of measuring accuracy <br>
 (cf. Warden, P., & Situnayake, D. 2019).
 
 ### How to execute and run
