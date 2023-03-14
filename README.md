@@ -98,6 +98,7 @@ Confusion matrix of measuring accuracy <br>
 ## 4. Troubleshooting
 
 * enter everything that didn't work
+* Trouble: Edge Impulse lost connection to Arduino device while data acquistion Fix: Flash Arduino
 * Trouble: Add Arduino device to Edge Impulse, connect a fully supported development board -> Fix: https://docs.edgeimpulse.com/docs/development-platforms/officially-supported-mcu-targets/arduino-nano-33-ble-senseLink Tutorial and name tips, execute more than one
 * Trouble: tbd Fix: https://forum.edgeimpulse.com/t/arduino-ble-sense-libraries-invalid-model-for-current-sensor/3730/2 or easier to add this line of code "#define EI_CLASSIFIER_SENSOR EI_CLASSIFIER_SENSOR_ACCELEROMETER  // EINFÜGEN IN JEDE DATEI"
 * Trouble: ERR: EI_CLASSIFIER_RAW_SAMPLES_PER_FRAME should be equal to 3 (the 3 sensor axes) -> Fix: Restart Arduino IDE and upload code again
