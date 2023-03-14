@@ -21,7 +21,10 @@ Use case of the project?
 Password entry of handwritten digits by moving in the air to facilitate different activities in the daily life of visually impaired people, for example, to have the front door opened. <br>
 Goal of the project? and Description project plan
 
-!["project plan"](https://github.com/moellpau/HandwrittenDigitRecognition/blob/main/images/project_plan.png)
+<p align="center">
+  <img src="https://github.com/moellpau/HandwrittenDigitRecognition/blob/main/images/project_plan.png"
+     height="500" />
+</p>
 <div align="center"><i>Figure 1: Project plan</i></div>
 
 <a name="work"></a>
@@ -37,7 +40,11 @@ All the named papers where used for inspiration and planning purposeses of the p
 ## 3. Implementation and hardware setup
 
 Before starting with the implementation and hardware setup, the whole process was modeled using a process diagram. <br>
-![Process diagram](https://github.com/moellpau/HandwrittenDigitRecognition/blob/main/images/process_diagram.png)
+<br>
+<p align="center">
+  <img src="https://github.com/moellpau/HandwrittenDigitRecognition/blob/main/images/process_diagram.png"
+     height="1000" />
+</p>
 <div align="center"><i>Figure 2: Process diagram</i></div>
 <br>
 
@@ -48,12 +55,27 @@ Before starting with the implementation and hardware setup, the whole process wa
 * Piezo element
 * Board
 
-![System architecture](https://github.com/moellpau/HandwrittenDigitRecognition/blob/main/images/system_architecture.jpeg)
+<p align="center">
+  <img src="https://github.com/moellpau/HandwrittenDigitRecognition/blob/main/images/system_architecture.jpeg"
+     height="400" />
+</p>
 <div align="center"><i>Figure 3: System architecture</i></div>
 <br>
 
+<p align="center">
+  <img src="https://github.com/moellpau/HandwrittenDigitRecognition/blob/main/images/hardware_setup.jpeg"
+     height="400" />
+</p>
+<div align="center"><i>Figure 4: Hardware setup</i></div>
 <br>
--> Arduino in more detail - close-up and Picture from complete hardware structure
+
+<p align="center">
+  <img src="https://github.com/moellpau/HandwrittenDigitRecognition/blob/main/images/close_up_arduino.png"
+     height="400" />
+</p>
+<div align="center"><i>Figure 5: Close-up Arduino Nano 33 BLE Sense</i></div>
+<br>
+<br>
 
 ### Software tools
 * [Edge Impulse](https://www.edgeimpulse.com/)
@@ -69,12 +91,10 @@ Air-writing recognition of the digits 1, 2 and 3 with Arduino Nano 33 BLE Sense.
 **2. Collect a dataset** <br>
 Identify data that is needed and create final dataset. The data was collected using the hardware setup above and using the drawn digit template in Figure 2. How the hardware ws used can be seen in Figure 3 with the old setup.
 
-![Template of digits](https://github.com/moellpau/HandwrittenDigitRecognition/blob/main/images/digit_template.jpg)
-<div align="center"><i>Figure 4: Template of digits</i></div> <br>
-
-![Data collection process](https://github.com/moellpau/HandwrittenDigitRecognition/blob/main/images/hardware_usage.jpg)
-<div align="center"><i>Figure 5: Hardware usage</i></div>
-<br>
+<p align="center">
+  <img src="https://github.com/moellpau/HandwrittenDigitRecognition/blob/main/images/digit_template.jpg"
+     height="170" />
+<div align="center"><i>Figure 6: Template of digits</i></div> <br>
 
 Charts about training and test data and dominant/used hand  <br>
 <br>
