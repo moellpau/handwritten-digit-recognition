@@ -56,8 +56,7 @@ Before starting with the implementation and hardware setup, the whole process wa
 * Board
 
 <p align="center">
-  <img src="https://github.com/moellpau/HandwrittenDigitRecognition/blob/main/images/system_architecture.jpeg"
-     height="400" />
+  <img src="https://github.com/moellpau/HandwrittenDigitRecognition/blob/main/images/system_architecture.jpeg"/>
 </p>
 <div align="center"><i>Figure 3: System architecture</i></div>
 <br>
