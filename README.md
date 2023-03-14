@@ -21,8 +21,8 @@ Use case of the project?
 Password entry of handwritten digits by moving in the air to facilitate different activities in the daily life of visually impaired people, for example, to have the front door opened. <br>
 Goal of the project? and Description project plan
 
-!["project plan"](https://github.com/moellpau/HandwrittenDigitRecognition/blob/main/project_plan.png)
-<div align="center">Project plan</div>
+!["project plan"](https://github.com/moellpau/HandwrittenDigitRecognition/blob/main/images/project_plan.png)
+<div align="center"><i>Figure 1: Project plan</i></div>
 
 <a name="work"></a>
 ## 2. Related work
@@ -59,11 +59,12 @@ All the named papers where used for inspiration and planning purposeses of the p
 1. Decide on a goal: Air-writing recognition of the digits 1, 2 and 3 with Arduino Nano 33 BLE Sense
 2. Collect a dataset 
 
-![Template of digits](https://github.com/moellpau/HandwrittenDigitRecognition/blob/main/digit_template.JPG)
-<div align="center">Template of digits</div> <br>
+![Template of digits](https://github.com/moellpau/HandwrittenDigitRecognition/blob/main/images/digit_template.JPG)
+<div align="center"><i>Figure 2: Template of digits</i></div> <br>
 
-![Data collection process](https://github.com/moellpau/HandwrittenDigitRecognition/blob/main/hardware_usage.jpg)
-<div align="center">Data collection process</div>
+![Data collection process](https://github.com/moellpau/HandwrittenDigitRecognition/blob/main/images/hardware_usage.jpg)
+<div align="center"><i>Figure 3: Hardware usage</i></div>
+<br>
 * Charts about training and test data and dominant/used hand
 3. Design a model architecture
 * Structure ML model or screenshots Edge Impulse
@@ -77,7 +78,7 @@ All the named papers where used for inspiration and planning purposeses of the p
 * Confusion matrix of measuring accuracy
 (cf. Warden, P., & Situnayake, D. 2019).
 
-### How to execute
+### How to execute and run
 
 * Hardware setup wie oben abgebildet + mit Kochlöffel
 * Arduino initalisieren -> Tutorial verlinken
