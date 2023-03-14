@@ -16,7 +16,7 @@ Date: 2023-03-24
 
 Hardware TinyML project with Arduino Nano 33 BLE Sense with the use of Edge Impulse. <br>
 What is TinyML? TinyML enables the deployment and on-device processing of ML models into resource constrainted edge devices. This brings a lot of benefits like low latency, privacy, low power and reduced bandwidth (cf. Warden, P., & Situnayake, D. 2019, p. 3; Sharma, R. 2022, p. 12) In the past few years, a set of technologies have been developed that make it possible to run miniature, highly optimized machine learning models on low-power microcontrollers like the one described above. By using machine learning to interpret sensor data right at the source, embedded applications can become smarter, faster, and more energy efficient, making their own decisions rather than having to stream data to the cloud and wait for a response. This concept is known as embedded machine learning, or TinyML. (cf. Tensorflow 2023) <br>
-How to use Tensorflow with Edge Impulse? The Edge Impulse is an end-to-end suite of tooling that helps embedded engineers and domain experts build and test machine learning applications. Edge Impulse makes use of the TensorFlow ecosystem for training, optimizing, and deploying deep learning models to embedded devices. <br>
+How to use Tensorflow with Edge Impulse? The Edge Impulse is an end-to-end suite of tooling that helps embedded engineers and domain experts build and test machine learning applications. Edge Impulse makes use of the TensorFlow ecosystem for training, optimizing, and deploying deep learning models to embedded devices. (cf. Tensorflow 2023) <br>
 Use case of the project?
 Password entry of handwritten digits by moving in the air to facilitate different activities in the daily life of visually impaired people, for example, to have the front door opened. <br>
 Goal of the project? and Description project plan
@@ -45,20 +45,20 @@ Before starting with the implementation and hardware setup, the whole process wa
 
 
 ### Hardware setup
-* Arduino Nano 33 BLE Sense
+* [Arduino Nano 33 BLE Sense](https://docs.arduino.cc/hardware/nano-33-ble-sense)
 * Button
-* Power Bank
-* Speaker
+* Power bank (5V/1A) - older version that doesn't turn off directly
+* Piezo element
 
 <br>
 -> Arduino in more detail - close-up and Picture from complete hardware structure
 
 ### Software tools
-* Edge Impulse
-* Arduino IDE
+* [Edge Impulse](https://www.edgeimpulse.com/)
+* [Arduino IDE](https://www.arduino.cc/en/software)
 
 ### Libraries
-* own machine learning model library https://github.com/moellpau/HandwrittenDigitRecognition/blob/main/AirWriting_inferencing.zip
+* [Own machine learning model library](https://github.com/moellpau/HandwrittenDigitRecognition/blob/main/AirWriting_inferencing.zip)
 
 ### Deep Learning Workflow
 **1. Decide on a goal** <br>
