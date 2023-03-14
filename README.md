@@ -98,6 +98,7 @@ Confusion matrix of measuring accuracy <br>
 ## 4. Troubleshooting
 
 * enter everything that didn't work
+* trouble installing Edge Impulse -> Link Tutorial and name tips
 
 <a name="con"></a>
 ## 5. Conclusion and future work
