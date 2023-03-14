@@ -36,8 +36,13 @@ All the named papers where used for inspiration and planning purposeses of the p
 <a name="impl"></a>
 ## 3. Implementation and hardware setup
 
+Before starting with the implementation and hardware setup, the whole process was modeled using a process diagram. <br>
+![Process diagram](https://github.com/moellpau/HandwrittenDigitRecognition/blob/main/images/process_diagram.png)
+<div align="center"><i>Figure 2: Process diagram</i></div>
+<br>
+
 * Picture system architecture
-* Activity diagram
+
 
 ### Hardware setup
 * Arduino Nano 33 BLE Sense
@@ -63,10 +68,10 @@ Air-writing recognition of the digits 1, 2 and 3 with Arduino Nano 33 BLE Sense.
 Identify data that is needed and create final dataset. The data was collected using the hardware setup above and using the drawn digit template in Figure 2. How the hardware ws used can be seen in Figure 3 with the old setup.
 
 ![Template of digits](https://github.com/moellpau/HandwrittenDigitRecognition/blob/main/images/digit_template.jpg)
-<div align="center"><i>Figure 2: Template of digits</i></div> <br>
+<div align="center"><i>Figure 3: Template of digits</i></div> <br>
 
 ![Data collection process](https://github.com/moellpau/HandwrittenDigitRecognition/blob/main/images/hardware_usage.jpg)
-<div align="center"><i>Figure 3: Hardware usage</i></div>
+<div align="center"><i>Figure 4: Hardware usage</i></div>
 <br>
 
 Charts about training and test data and dominant/used hand  <br>
