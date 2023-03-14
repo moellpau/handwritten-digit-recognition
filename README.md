@@ -88,18 +88,29 @@ Before starting with the implementation and hardware setup, the whole process wa
 Air-writing recognition of the digits 1, 2 and 3 with Arduino Nano 33 BLE Sense. This as a classification problem. Classification is a machine learning task that takes a set of input data and returns the probability that this data fits each of a set of known classes. In this example, there are three classes: number_1, number_2 and number_3.<br>
 <br>
 **2. Collect a dataset** <br>
-Identify data that is needed and create final dataset. The data was collected using the hardware setup above and using the drawn digit template in Figure 2. How the hardware ws used can be seen in Figure 3 with the old setup.
+Identify data that is needed and create final dataset. The data was collected using the hardware setup above and using the drawn digit template in following figure.
+Text about training and test data and dominant/used hand 
 
 <p align="center">
   <img src="https://github.com/moellpau/HandwrittenDigitRecognition/blob/main/images/digit_template.jpg"
      height="170" />
 <div align="center"><i>Figure 6: Template of digits</i></div> <br>
 
-Charts about training and test data and dominant/used hand  <br>
+https://github.com/moellpau/HandwrittenDigitRecognition/blob/main/images/inference.mov
+<br>
 <br>
 **3. Design a model architecture** <br>
 Generating features from data,
 Screenshots Edge Impulse features and ML model <br>
+<p align="center">
+  <img src="https://github.com/moellpau/HandwrittenDigitRecognition/blob/main/images/feature_explorer.png"
+     height="500" />
+<div align="center"><i>Figure x: Features</i></div> <br>
+
+<p align="center">
+  <img src="https://github.com/moellpau/HandwrittenDigitRecognition/blob/main/images/ML_model.png"
+     height="500" />
+<div align="center"><i>Figure x: Machine Learning model</i></div> <br>
 
 **4. Train the model** <br>
 Training is the process by which a model learns to produce the correct output for a given set of inputs. It involves feeding training data through a model and making small adjustments to it until it makes the most accurate predictions possible.
@@ -107,6 +118,10 @@ Training is the process by which a model learns to produce the correct output fo
 * Underfitting and Overfitting
 * Training, validation, and testing
 Screenshots Edge Impulse <br>
+<p align="center">
+  <img src="https://github.com/moellpau/HandwrittenDigitRecognition/blob/main/images/neural_network_setting.png"
+     height="500" />
+<div align="center"><i>Figure x: Neural network settings</i></div> <br>
 
 **5. Convert the model** <br>
 Throughout this book, we use TensorFlow to build and train models. A TensorFlow model is essentially a set of instructions that tell an interpreter how to transform data in order to produce an output. When we want to use our model, we just load it into memory and execute it using the TensorFlow interpreter.
@@ -120,6 +135,11 @@ GIF how to use hardware setup and run inference <br>
 
 **7. Evaluate and troubleshoot** <br>
 Confusion matrix of measuring accuracy <br>
+
+<p align="center">
+  <img src="https://github.com/moellpau/HandwrittenDigitRecognition/blob/main/images/evaluation.png"
+     height="500" />
+<div align="center"><i>Figure x: Confusion matrix and accuracy</i></div> <br>
 (cf. Warden, P., & Situnayake, D. 2019).
 
 ### How to execute and run
@@ -128,6 +148,14 @@ Confusion matrix of measuring accuracy <br>
 * Arduino initalisieren -> Tutorial verlinken
 * welche libraries und wann installieren
 * wie und wo den Code ausführen -> mit Screenshots hinterlegen
+
+<p align="center">
+  <img src="https://github.com/moellpau/HandwrittenDigitRecognition/blob/main/images/add%20library.png" />
+<div align="center"><i>Figure x: Add Library</i></div> <br>
+
+<p align="center">
+  <img src="https://github.com/moellpau/HandwrittenDigitRecognition/blob/main/images/examples.png" />
+<div align="center"><i>Figure x: Examples</i></div> <br>
 
 <a name="trouble"></a>
 ## 4. Troubleshooting
