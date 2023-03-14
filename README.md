@@ -57,7 +57,7 @@ All the named papers where used for inspiration and planning purposeses of the p
 
 ### Deep Learning Workflow
 **1. Decide on a goal** <br>
-Air-writing recognition of the digits 1, 2 and 3 with Arduino Nano 33 BLE Sense <br>
+Air-writing recognition of the digits 1, 2 and 3 with Arduino Nano 33 BLE Sense. This as a classification problem. Classification is a machine learning task that takes a set of input data and returns the probability that this data fits each of a set of known classes. In this example, there are three classes: number_1, number_2 and number_3.<br>
 <br>
 **2. Collect a dataset** <br>
 The data was collected using the hardware setup above and using the drawn digit template in Figure 2. How the hardware ws used can be seen in Figure 3 with the old setup.
@@ -111,6 +111,7 @@ Confusion matrix of measuring accuracy <br>
 * possiblity to check and enter more than one digit etc.
 * connection/wifi to specific system like door lock etc.
 * custom sounds and words -> connect speaker to Arduino
+* Hyperparameter tuning for our model
 
 <a name="sour"></a>
 ## 6. Sources
