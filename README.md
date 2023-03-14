@@ -41,14 +41,17 @@ Before starting with the implementation and hardware setup, the whole process wa
 <div align="center"><i>Figure 2: Process diagram</i></div>
 <br>
 
-* Picture system architecture
-
-
 ### Hardware setup
 * [Arduino Nano 33 BLE Sense](https://docs.arduino.cc/hardware/nano-33-ble-sense)
 * Button
 * Power bank (5V/1A) - older version that doesn't turn off directly
 * Piezo element
+* Board
+
+<br>
+![System architecture](https://github.com/moellpau/HandwrittenDigitRecognition/blob/main/images/system_architecture.jpeg)
+<div align="center"><i>Figure 3: System architecture</i></div>
+<br>
 
 <br>
 -> Arduino in more detail - close-up and Picture from complete hardware structure
@@ -68,10 +71,10 @@ Air-writing recognition of the digits 1, 2 and 3 with Arduino Nano 33 BLE Sense.
 Identify data that is needed and create final dataset. The data was collected using the hardware setup above and using the drawn digit template in Figure 2. How the hardware ws used can be seen in Figure 3 with the old setup.
 
 ![Template of digits](https://github.com/moellpau/HandwrittenDigitRecognition/blob/main/images/digit_template.jpg)
-<div align="center"><i>Figure 3: Template of digits</i></div> <br>
+<div align="center"><i>Figure 4: Template of digits</i></div> <br>
 
 ![Data collection process](https://github.com/moellpau/HandwrittenDigitRecognition/blob/main/images/hardware_usage.jpg)
-<div align="center"><i>Figure 4: Hardware usage</i></div>
+<div align="center"><i>Figure 5: Hardware usage</i></div>
 <br>
 
 Charts about training and test data and dominant/used hand  <br>
