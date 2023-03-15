@@ -98,19 +98,12 @@ Text about training and test data and dominant/used hand
 <br>
 
 **3. Design a model architecture** <br>
-Generating features from data,
-Screenshots Edge Impulse features and ML model <br>
+Generating features from data <br>
 
 <p align="center">
-  <img src="https://github.com/moellpau/HandwrittenDigitRecognition/blob/main/images/ML_model.png"
-     height="500" />
-<div align="center"><i>Figure x: Machine Learning model</i></div> <br>
+  <img src="https://github.com/moellpau/HandwrittenDigitRecognition/blob/main/images/design_model.jpg"/>
+<div align="center"><i>Figure 7: Machine learning model design</i></div> <br>
 <br>
-
-<p align="center">
-  <img src="https://github.com/moellpau/HandwrittenDigitRecognition/blob/main/images/feature_explorer.png"
-     height="500" />
-<div align="center"><i>Figure x: Features</i></div> <br>
 
 **4. Train the model** <br>
 Training is the process by which a model learns to produce the correct output for a given set of inputs. It involves feeding training data through a model and making small adjustments to it until it makes the most accurate predictions possible.
