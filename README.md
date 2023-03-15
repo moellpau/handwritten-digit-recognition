@@ -47,6 +47,8 @@ Before starting with the implementation and hardware setup, the whole process wa
 <br>
 
 ### Hardware setup
+
+**Technical components**
 * [Arduino Nano 33 BLE Sense](https://docs.arduino.cc/hardware/nano-33-ble-sense)
 * Push button
 * Power bank (5V/1A) - older version that doesn't turn off directly
@@ -54,6 +56,11 @@ Before starting with the implementation and hardware setup, the whole process wa
 * Piezo element
 * Bread board
 * 2x Jumper wire cable
+
+**Additional components**
+* 2x Cable ties
+* Wooden spoon
+* Sticky tape
 
 <p align="center">
   <img src="https://github.com/moellpau/HandwrittenDigitRecognition/blob/main/images/system_architecture.jpeg"/>
@@ -81,8 +88,8 @@ Before starting with the implementation and hardware setup, the whole process wa
 * [Arduino IDE](https://www.arduino.cc/en/software)
 
 ### Libraries
-* [Arduino_LSM9DS1] (https://www.arduino.cc/reference/en/libraries/arduino_lsm9ds1/)
-* [Own machine learning model library](https://github.com/moellpau/HandwrittenDigitRecognition/blob/main/AirWriting_inferencing.zip)
+* [Arduino_LSM9DS1](https://www.arduino.cc/reference/en/libraries/arduino_lsm9ds1/)
+* [AirWriting_inferencing - ML model library](https://github.com/moellpau/HandwrittenDigitRecognition/blob/main/AirWriting_inferencing.zip)
 
 ### Deep Learning Workflow
 **1. Decide on a goal** <br>
@@ -135,17 +142,16 @@ After the model has been converted, it’s ready to deploy! We’ll now use the 
 <br>
 
 **7. Evaluate and troubleshoot** <br>
-Confusion matrix of measuring accuracy <br>
+Pretty good for less data, more data needed and different positions of user, recognized that training and test data was collected only in sitting position, the model can classify numbers in standing position.<br>
 
 (cf. Warden, P., & Situnayake, D. 2019).
 
 ### How to execute and run
-
-* Hardware setup wie oben abgebildet + mit Kochlöffel
-* Arduino initalisieren -> Tutorial verlinken
-* welche libraries und wann installieren
-* wie und wo den Code ausführen -> mit Screenshots hinterlegen
-
+<br>
+1. [Getting started and setup the Arduino Nano 33 BLE Sense](https://docs.arduino.cc/hardware/nano-33-ble) <br>
+2. Build the hardware setup with the above mentioned components and as shown in the given figure <br>
+3. Import and install the needed libraries as shown below <br>
+<br>
 <p align="center">
   <img src="https://github.com/moellpau/HandwrittenDigitRecognition/blob/main/images/add%20library.png" />
 <div align="center"><i>Figure x: Add Library</i></div> <br>
@@ -153,6 +159,9 @@ Confusion matrix of measuring accuracy <br>
 <p align="center">
   <img src="https://github.com/moellpau/HandwrittenDigitRecognition/blob/main/images/examples.png" />
 <div align="center"><i>Figure x: Examples</i></div> <br>
+4. Open, compile and upload the code to the Arduino Nano 33 BLE Sense <br>
+Screenshots <br>
+5. Start the process with pushing the Push button <br>
 
 <a name="trouble"></a>
 ## 4. Troubleshooting
