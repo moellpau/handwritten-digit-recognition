@@ -63,7 +63,7 @@ The hardware setup of the projects consists of different components listed below
 * Wooden spoon
 * Sticky tape
 <br>
-The system architecture and hardware setup shows how the components are used in the project and how there were build together. The Arduino close-up shows in more detail which elements of the Arduino Nano 33 BLE Sense are used.
+The system architecture and hardware setup show how the components are used in the project and how there were build together. The Arduino close-up shows in more detail which elements of the Arduino Nano 33 BLE Sense are used.
 <br>
 <p align="center">
   <img src="https://github.com/moellpau/HandwrittenDigitRecognition/blob/main/images/system_architecture.jpeg"/>
