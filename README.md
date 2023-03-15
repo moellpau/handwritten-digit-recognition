@@ -14,12 +14,10 @@ Date: 2023-03-24
 <a name="desc"></a>
 ## 1. Description and use case
 
-Hardware TinyML project with Arduino Nano 33 BLE Sense with the use of Edge Impulse. <br>
-What is TinyML? TinyML enables the deployment and on-device processing of ML models into resource constrainted edge devices. This brings a lot of benefits like low latency, privacy, low power and reduced bandwidth (cf. Warden, P., & Situnayake, D. 2019, p. 3; Sharma, R. 2022, p. 12) In the past few years, a set of technologies have been developed that make it possible to run miniature, highly optimized machine learning models on low-power microcontrollers like the one described above. By using machine learning to interpret sensor data right at the source, embedded applications can become smarter, faster, and more energy efficient, making their own decisions rather than having to stream data to the cloud and wait for a response. This concept is known as embedded machine learning, or TinyML. (cf. Tensorflow 2023) <br>
-How to use Tensorflow with Edge Impulse? The Edge Impulse is an end-to-end suite of tooling that helps embedded engineers and domain experts build and test machine learning applications. Edge Impulse makes use of the TensorFlow ecosystem for training, optimizing, and deploying deep learning models to embedded devices. (cf. Tensorflow 2023) <br>
-Use case of the project?
-Password entry of handwritten digits by moving in the air to facilitate different activities in the daily life of visually impaired people, for example, to have the front door opened. <br>
-Goal of the project? and Description project plan
+The implemented solution is a hardware **TinyML project** with an **Arduino Nano 33 BLE Sense** and the use of **Edge Impulse** as machine learning platform. Therefore TinyML also known as embedded machine learning empowers the deployment and processing of machine learning (ML) models into resource constrainted edge devices. This brings a lot of benefits like low latency, privacy, low power and reduced bandwidth. (Cf. Warden, P., & Situnayake, D. 2019, p. 3; Sharma, R. 2022, p. 12) In the last years, different technologies have been developed that make it possible to run miniature, highly optimized machine learning models on low-power microcontrollers. One famous library for membedded machine learning is TensorFlow Lite and the used platform Edge Impulse makes use of the TensorFlow ecosystem for training, optimizing, and deploying deep learning models to embedded devices. (Cf. Tensorflow 2023) <br>
+<br>
+The goal of this project is the **handwritten digit recognition by movement in the air**. This can be used for the password entry of handwritten digits to facilitate different activities in the daily life of visually impaired people, for example, to have the front door opened. <br>
+To implement and deploy the project, the following high-level project plan was set up.
 
 <p align="center">
   <img src="https://github.com/moellpau/HandwrittenDigitRecognition/blob/main/images/project_plan.png"
