@@ -164,10 +164,10 @@ Screenshots <br>
 This troubleshooting documentation is intended to give information on how to solve and prevent problems that appeared during the implementation process. <br>
 | No. | Trouble    | Fixes   |
 | :---:   | :---: | :---: |
-| #1 | Edge Impulse lost connection to Arduino device while data acquistion (Sampling failed ERR: Failed to start sensor fusion sampling).   | Flash Arduino and add it again to Edge Impulse by following this [guide](https://docs.edgeimpulse.com/docs/development-platforms/officially-supported-mcu-targets/arduino-nano-33-ble-sense).  |
-| #2 | Arduino BLE Sense libraries “invalid model for current sensor”. | [Use forum entry](https://forum.edgeimpulse.com/t/arduino-ble-sense-libraries-invalid-model-for-current-sensor/3730/2) or add this line of code "#define EI_CLASSIFIER_SENSOR EI_CLASSIFIER_SENSOR_ACCELEROMETER".  |
-| #3 | During code upload to Arduino this error message appeared "ERR: EI_CLASSIFIER_RAW_SAMPLES_PER_FRAME should be equal to 3 (the 3 sensor axes)". | Restart Arduino IDE and upload code again.  |
-| #4 | Arduino doesn't start the program without PC connection. | Remove "while (!Serial);" from code because the loop has previously waited for a serial connection to be established. This only happens when a PC is connected.  |
+| #1 | Edge Impulse lost connection to the Arduino device during data acquisition (Sampling failed ERR: Failed to start sensor fusion sampling).  | Flash Arduino and connect it to Edge Impulse by following this [guide](https://docs.edgeimpulse.com/docs/development-platforms/officially-supported-mcu-targets/arduino-nano-33-ble-sense).  |
+| #2 | Arduino BLE Sense libraries “invalid model for current sensor”. | [Use forum contribution](https://forum.edgeimpulse.com/t/arduino-ble-sense-libraries-invalid-model-for-current-sensor/3730/2) or add this line of code "#define EI_CLASSIFIER_SENSOR EI_CLASSIFIER_SENSOR_ACCELEROMETER".  |
+| #3 | During code upload to Arduino this error message appeared "ERR: EI_CLASSIFIER_RAW_SAMPLES_PER_FRAME should be equal to 3 (the 3 sensor axes)". | Restart Arduino IDE and upload the source code again.  |
+| #4 | Arduino doesn't start the program without a PC connection. | Remove "while (!Serial);" from the source code because the loop has previously waited for a serial connection to be established. This only happens when a PC is connected.  |
 
 <a name="con"></a>
 ## 5. Conclusion and future work
