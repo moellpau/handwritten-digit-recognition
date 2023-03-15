@@ -23,7 +23,7 @@ Goal of the project? and Description project plan
 
 <p align="center">
   <img src="https://github.com/moellpau/HandwrittenDigitRecognition/blob/main/images/project_plan.png"
-     height="500" />
+     height="400" width="711"/>
 </p>
 <div align="center"><i>Figure 1: Project plan</i></div>
 
@@ -70,7 +70,7 @@ Before starting with the implementation and hardware setup, the whole process wa
 
 <p align="center">
   <img src="https://github.com/moellpau/HandwrittenDigitRecognition/blob/main/images/close_up_arduino.png"
-     height="400" />
+     height="350" />
 </p>
 <div align="center"><i>Figure 5: Close-up Arduino Nano 33 BLE Sense</i></div>
 <br>
@@ -106,7 +106,7 @@ Text about training and test data and dominant/used hand
 Generating features from data <br>
 
 <p align="center">
-  <img src="https://github.com/moellpau/HandwrittenDigitRecognition/blob/main/images/design_model.png"/>
+  <img src="https://github.com/moellpau/HandwrittenDigitRecognition/blob/main/images/design_model.jpg"/>
 <div align="center"><i>Figure 8: Machine learning model design</i></div> <br>
 <br>
 
@@ -117,7 +117,7 @@ Training is the process by which a model learns to produce the correct output fo
 * Training, validation, and testing
 Screenshots Edge Impulse <br>
 <p align="center">
-  <img src="https://github.com/moellpau/HandwrittenDigitRecognition/blob/main/images/train_model.png"/>
+  <img src="https://github.com/moellpau/HandwrittenDigitRecognition/blob/main/images/train_model.jpg"/>
 <div align="center"><i>Figure 9: Model training</i></div> <br>
 
 **5. Convert the model** <br>
