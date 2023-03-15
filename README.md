@@ -173,12 +173,7 @@ This troubleshooting documentation is intended to give information on how to sol
 <a name="con"></a>
 ## 5. Conclusion and future work
 
-* add more digits and letters + sonderzeichen to make a passwort entry possible
-* possiblity to check and enter more than one digit etc.
-* connection/wifi to specific system like door lock etc.
-* custom sounds and words -> connect speaker to Arduino
-* Hyperparameter tuning for our model
-* Train model in correct position of the user, add mor etraining and test data and retrain the model several times to improve
+With the project work, a prototype for handwritten digit recognition by movement in the air could be developed and implemented. Furthermore, this project leaves much room for further investigation and future work. It would be beneficial for the use case to add more digits and letters to the model to make it possible to enter a more complex password. Moreover, there is the need for a possibility to check and enter more than one digit or letter and a connection to the specific system like a door etc. Another extension would be to add a speaker and amplifier to the Arduino to add custom sounds and spoken words. To improve the accuracy of the machine learning model, it is important to do hyperparameter tuning and train the model in the correct position of the user or add more training and test data.
 
 <a name="sour"></a>
 ## 6. Sources
