@@ -97,12 +97,17 @@ Text about training and test data and dominant/used hand
 <div align="center"><i>Figure 6: Template of digits</i></div> <br>
 <br>
 
+<p align="center">
+  <img src="https://github.com/moellpau/HandwrittenDigitRecognition/blob/main/images/data_collection.jpeg"/>
+<div align="center"><i>Figure 7: Data collection in Edge Impulse</i></div> <br>
+<br>
+
 **3. Design a model architecture** <br>
 Generating features from data <br>
 
 <p align="center">
-  <img src="https://github.com/moellpau/HandwrittenDigitRecognition/blob/main/images/design_model.jpg"/>
-<div align="center"><i>Figure 7: Machine learning model design</i></div> <br>
+  <img src="https://github.com/moellpau/HandwrittenDigitRecognition/blob/main/images/design_model.png"/>
+<div align="center"><i>Figure 8: Machine learning model design</i></div> <br>
 <br>
 
 **4. Train the model** <br>
@@ -112,9 +117,8 @@ Training is the process by which a model learns to produce the correct output fo
 * Training, validation, and testing
 Screenshots Edge Impulse <br>
 <p align="center">
-  <img src="https://github.com/moellpau/HandwrittenDigitRecognition/blob/main/images/neural_network_setting.png"
-     height="500" />
-<div align="center"><i>Figure x: Neural network settings</i></div> <br>
+  <img src="https://github.com/moellpau/HandwrittenDigitRecognition/blob/main/images/train_model.png"/>
+<div align="center"><i>Figure 9: Model training</i></div> <br>
 
 **5. Convert the model** <br>
 Throughout this book, we use TensorFlow to build and train models. A TensorFlow model is essentially a set of instructions that tell an interpreter how to transform data in order to produce an output. When we want to use our model, we just load it into memory and execute it using the TensorFlow interpreter.
@@ -131,10 +135,6 @@ https://github.com/moellpau/HandwrittenDigitRecognition/blob/main/images/inferen
 **7. Evaluate and troubleshoot** <br>
 Confusion matrix of measuring accuracy <br>
 
-<p align="center">
-  <img src="https://github.com/moellpau/HandwrittenDigitRecognition/blob/main/images/evaluation.png"
-     height="500" />
-<div align="center"><i>Figure x: Confusion matrix and accuracy</i></div> <br>
 (cf. Warden, P., & Situnayake, D. 2019).
 
 ### How to execute and run
