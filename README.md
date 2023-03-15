@@ -48,10 +48,12 @@ Before starting with the implementation and hardware setup, the whole process wa
 
 ### Hardware setup
 * [Arduino Nano 33 BLE Sense](https://docs.arduino.cc/hardware/nano-33-ble-sense)
-* Button
+* Push button
 * Power bank (5V/1A) - older version that doesn't turn off directly
+* Power cable (USB/Micro USB)
 * Piezo element
-* Board
+* Bread board
+* 2x Jumper wire cable
 
 <p align="center">
   <img src="https://github.com/moellpau/HandwrittenDigitRecognition/blob/main/images/system_architecture.jpeg"/>
@@ -79,6 +81,7 @@ Before starting with the implementation and hardware setup, the whole process wa
 * [Arduino IDE](https://www.arduino.cc/en/software)
 
 ### Libraries
+* [Arduino_LSM9DS1] (https://www.arduino.cc/reference/en/libraries/arduino_lsm9ds1/)
 * [Own machine learning model library](https://github.com/moellpau/HandwrittenDigitRecognition/blob/main/AirWriting_inferencing.zip)
 
 ### Deep Learning Workflow
