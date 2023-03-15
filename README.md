@@ -128,7 +128,9 @@ Screenshots Edge Impulse <br>
 
 **6. Run inference** <br>
 After the model has been converted, it’s ready to deploy! We’ll now use the Tensor‐ Flow Lite for Microcontrollers C++ library to load the model and make predictions. <br>
-![Inference_GIF](https://github.com/moellpau/HandwrittenDigitRecognition/blob/main/images/inference.gif)
+<p align="center">
+  <img src="https://github.com/moellpau/HandwrittenDigitRecognition/blob/main/images/ML_inference.gif" />
+<div align="center"><i>Figure x: Run inference</i></div> <br>
 <br>
 
 **7. Evaluate and troubleshoot** <br>
