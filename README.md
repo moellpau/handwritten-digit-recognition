@@ -37,7 +37,7 @@ All the named papers where used for inspiration and planning purposeses of the p
 <a name="impl"></a>
 ## 3. Implementation and hardware setup
 
-Before starting with the implementation and hardware setup, the whole process was modeled using a process diagram. <br>
+Before starting with the implementation and hardware setup of the project, the whole process was modeled using a process diagram with BPMN 2.0. <br>
 <br>
 <p align="center">
   <img src="https://github.com/moellpau/HandwrittenDigitRecognition/blob/main/images/process_diagram.png"
@@ -47,7 +47,9 @@ Before starting with the implementation and hardware setup, the whole process wa
 <br>
 
 ### Hardware setup
-
+The hardware setup of the projects consists of different components listed below. 
+<br>
+<br>
 **Technical components**
 * [Arduino Nano 33 BLE Sense](https://docs.arduino.cc/hardware/nano-33-ble-sense)
 * Push button
@@ -56,11 +58,14 @@ Before starting with the implementation and hardware setup, the whole process wa
 * Piezo element
 * Bread board
 * 2x Jumper wire cable
+<br><br>
 
 **Additional components**
 * 2x Cable ties
 * Wooden spoon
 * Sticky tape
+<br>
+The system architecture and hardware setup shows how the components are used in the project and how there were build together. The Arduino close-up shows in more detail which elements of the Arduino Nano 33 BLE Sense are used.
 
 <p align="center">
   <img src="https://github.com/moellpau/HandwrittenDigitRecognition/blob/main/images/system_architecture.jpeg"/>
@@ -83,11 +88,13 @@ Before starting with the implementation and hardware setup, the whole process wa
 <br>
 <br>
 
-### Software tools
+### Software tools and libraries
+The following software tools are used for the implementation of the project. <br>
 * [Edge Impulse](https://www.edgeimpulse.com/)
 * [Arduino IDE](https://www.arduino.cc/en/software)
+<br> <br>
 
-### Libraries
+The following software libraries are used for the implementation of the project. <br>
 * [Arduino_LSM9DS1](https://www.arduino.cc/reference/en/libraries/arduino_lsm9ds1/)
 * [AirWriting_inferencing - ML model library](https://github.com/moellpau/HandwrittenDigitRecognition/blob/main/AirWriting_inferencing.zip)
 
