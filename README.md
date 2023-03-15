@@ -28,16 +28,14 @@ To implement and deploy the project, the following high-level project plan was s
 <a name="work"></a>
 ## 2. Related work
 
-As handwriting recognition (HWR) is a topic of growing interest in the research community which can solve a lot of real-world problems, there are a lot of successful papers. For HWR there are different approaches which can be using the cameras and scanners or using motion sensors. Chen, L. et al. proposed with their paper a real-time air-wirting character recognition wearable system based on edge computing and deep learning. They could reach an accurary of 97.95% with their approach of using an Arudino Nano 33 BLE sense and capturing motion data by inertial measurement units (IMUs). This is way more than any air-writing recognition with optical sensors could reach as there are around 90% accuracy. Chen, L. et al. use a five-layer CNN which has been converted into TensorFlow Lite format to run on Arduino Nano 33 BLE Sense to recognize 10 digits and 26 lower-case letters. For the data aquistion, 35 students of their institute were recruited to collect data for model training. This means there had people with different gender and dominant hand. (Cf.  Chen, L. et al. 2022) <br>
-Also Chai, Y. et al. on the other presented a wireless-inertial-measurement-unit - (WIMU-) based hand motion analysis technique for handwirting recognition and achieved an accuracy of 98% with an accelerometer and gyroscope-based method. They were using their WIMU motion sensor-based hand-writing interface using the 26 lowercase letetrs of the English alphabet and digits. <br>
-Alemayoh, T. T. et al. developed in their paper a deep-learing-based compact smart digital pen that recognizes 36 alphanumeric characters. Unlike common methods they used not only inertial data but using an inertial force sensor. The data was recorded of six volunteers and different ddeep-learning methods where used like Vison transformer (ViT), CNN, DNN and LSTM. The ViT network outperformed the others to achieve a validation accurary of 99.05%. (Cf. Alemayoh, T. T. et al. 2022). <br>
-Preethi, K., & Chithra, S. also developed an on-air recognition system but specificly for impared people. Their goal was to develop character recognition system used to develop cost effective assistive technologies to provide blind people with greater degree of confidence in their activities. The device here is also equipped with gyroscope and accelerometer to recognize the hand movement. (Cf. Preethi, K., & Chithra, S. 2018)
-All the named papers where used for inspiration and planning purposeses of the project.
+Handwriting recognition (HWR) is a topic of growing interest in the research community and can solve real-world problems. For HWR there are different approaches which, on the one hand, use cameras and scanners and, on the other hand, use motion sensors. Chen, L. et al. proposed a real-time air-wirting character recognition wearable system based on edge computing and deep learning. The reached accurary of there approach is 97.95% by using an Arduino Nano 33 BLE sense and capturing motion data by inertial measurement units (IMUs). This accurary is more than any air-writing recognition with optical sensors could reach, as there are around 90% accuracy. Chen, L. et al. use a five-layer CNN which has been converted into TensorFlow Lite format to run on Arduino Nano 33 BLE Sense to recognize 10 digits and 26 lower-case letters. For the data aquistion, 35 students with different gender and dominant hand collected data for model training. (Cf. Chen, L. et al. 2022) <br> <br>
+Furthermore, Chai, Y. et al. presented a wireless-inertial-measurement-unit- (WIMU-) based hand motion analysis technique for handwirting recognition and achieved an accuracy of 98% with an accelerometer and gyroscope-based method. They used their WIMU motion sensor-based hand-writing interface using the 26 lowercase letters of the English alphabet and digits. Moreover, Alemayoh, T. T. et al. developed in their paper a deep-learing-based compact smart digital pen that recognizes 36 alphanumeric characters. Unlike others methods they used not only inertial data but using an inertial force sensor. The data was recorded of six volunteers and trained with different deep-learning methods. The Vison transformer (ViT) network outperformed the other methods by achieving a validation accurary of 99.05%. (Cf. Alemayoh, T. T. et al. 2022) A paper of Preethi, K., & Chithra, S. researched specificly in the field of on-air recognition system impared people. Their goal was to develop character recognition system to develop cost effective assistive technologies to provide blind people with greater degree of confidence in their activities. The device here is also equipped with gyroscope and accelerometer to recognize the hand movement. (Cf. Preethi, K., & Chithra, S. 2018) <br> <br>
+All the papers studied and analyzed formed the basis for this research project.
 
 <a name="impl"></a>
 ## 3. Implementation and hardware setup
 
-Before starting with the implementation and hardware setup of the project, the whole process was modeled using a process diagram with BPMN 2.0. <br>
+Before starting with the implementation and hardware setup of the project, the whole process to be mapped whas been modeled using a process diagram with BPMN 2.0 notation. <br>
 <br>
 <p align="center">
   <img src="https://github.com/moellpau/HandwrittenDigitRecognition/blob/main/images/process_diagram.png"
@@ -66,7 +64,7 @@ The hardware setup of the projects consists of different components listed below
 * Sticky tape
 <br>
 The system architecture and hardware setup shows how the components are used in the project and how there were build together. The Arduino close-up shows in more detail which elements of the Arduino Nano 33 BLE Sense are used.
-
+<br>
 <p align="center">
   <img src="https://github.com/moellpau/HandwrittenDigitRecognition/blob/main/images/system_architecture.jpeg"/>
 </p>
@@ -92,19 +90,19 @@ The system architecture and hardware setup shows how the components are used in 
 The following software tools are used for the implementation of the project. <br>
 * [Edge Impulse](https://www.edgeimpulse.com/)
 * [Arduino IDE](https://www.arduino.cc/en/software)
-<br> <br>
 
 The following software libraries are used for the implementation of the project. <br>
 * [Arduino_LSM9DS1](https://www.arduino.cc/reference/en/libraries/arduino_lsm9ds1/)
 * [AirWriting_inferencing - ML model library](https://github.com/moellpau/HandwrittenDigitRecognition/blob/main/AirWriting_inferencing.zip)
 
 ### Deep Learning Workflow
+The deep learning workflow was implemented based on Warden, P., & Situnayake, D. and using the software suite Edge Impulse. The individual steps of the deep learning workflow are described and explained in more detail below.
+<br> <br>
 **1. Decide on a goal** <br>
-Air-writing recognition of the digits 1, 2 and 3 with Arduino Nano 33 BLE Sense. This as a classification problem. Classification is a machine learning task that takes a set of input data and returns the probability that this data fits each of a set of known classes. In this example, there are three classes: number_1, number_2 and number_3.<br>
+The goal is the handwritten digit recognition of the digits 1, 2 and 3 with an Arduino Nano 33 BLE Sense. The described problem is a classification problem. Classification is a machine learning task that takes a set of input data and returns the probability that this data fits each of a set of known classes. In this example, the classes are: number_1, number_2 and number_3. (Cf. Warden, P., & Situnayake, D. 2019)<br>
 <br>
 **2. Collect a dataset** <br>
-Identify data that is needed and create final dataset. The data was collected using the hardware setup above and using the drawn digit template in following figure.
-Text about training and test data and dominant/used hand 
+In the second step, the data that is needed has to be identified and the final dataset is created. In our project, the data was collected using the hardware setup above and the drawn digit template in the following figure. The training and test data was split with 80/20 distribution. Overall, 600 data entries are collected, 300 in sitting position and 300 in standing position. The data entries are split equally to all digits (1, 2 and 3). Furthermore, 300 data entries were collected with the right hand and 300 with the left hand. <br>
 
 <p align="center">
   <img src="https://github.com/moellpau/HandwrittenDigitRecognition/blob/main/images/digit_template.jpg"
@@ -118,7 +116,7 @@ Text about training and test data and dominant/used hand
 <br>
 
 **3. Design a model architecture** <br>
-Generating features from data <br>
+In the next step, the model architecture is designed by generating features from data. The settings and features can be found in the following Screenshot of Edge Impulse. (Cf. Warden, P., & Situnayake, D. 2019) <br>
 
 <p align="center">
   <img src="https://github.com/moellpau/HandwrittenDigitRecognition/blob/main/images/design_model.jpg"/>
@@ -126,35 +124,26 @@ Generating features from data <br>
 <br>
 
 **4. Train the model** <br>
-Training is the process by which a model learns to produce the correct output for a given set of inputs. It involves feeding training data through a model and making small adjustments to it until it makes the most accurate predictions possible.
+During the training the model learns how to produce the correct output for a given set of inputs. This involves feeding training data through a model and making small adjustments until it makes the most accurate predictions possible. (Cf. Warden, P., & Situnayake, D. 2019) All the settings for training can be seen in the following Screenshots of Edge Impulse.
 <br>
-* Underfitting and Overfitting
-* Training, validation, and testing
-Screenshots Edge Impulse <br>
 <p align="center">
   <img src="https://github.com/moellpau/HandwrittenDigitRecognition/blob/main/images/train_model.jpg"/>
 <div align="center"><i>Figure 9: Model training</i></div> <br>
 
 **5. Convert the model** <br>
-Throughout this book, we use TensorFlow to build and train models. A TensorFlow model is essentially a set of instructions that tell an interpreter how to transform data in order to produce an output. When we want to use our model, we just load it into memory and execute it using the TensorFlow interpreter.
-However, TensorFlow’s interpreter is designed to run models on powerful desktop computers and servers. Since we’ll be running our models on tiny microcontrollers, we need a different interpreter that’s designed for our use case. Fortunately, Tensor‐ Flow provides an interpreter and accompanying tools to run models on small, low- powered devices. This set of tools is called TensorFlow Lite.
-Before TensorFlow Lite can run a model, it first must be converted into the Tensor‐ Flow Lite format and then saved to disk as a file. We do this using a tool named the TensorFlow Lite Converter. The converter can also apply special optimizations aimed at reducing the size of the model and helping it run faster, often without sacrificing performance.<br>
-Screenshots Edge Impulse <br>
+The last step before running inference is to convert the model in TensorFlow Lite with Edge Impulse. <br>
 
 **6. Run inference** <br>
-After the model has been converted, it’s ready to deploy! We’ll now use the Tensor‐ Flow Lite for Microcontrollers C++ library to load the model and make predictions. <br>
+After the model has been converted, it’s ready to deploy! <br>
 <p align="center">
   <img src="https://github.com/moellpau/HandwrittenDigitRecognition/blob/main/images/ML_inference.gif" />
-<div align="center"><i>Figure x: Run inference</i></div> <br>
+<div align="center"><i>Figure 10: Run inference</i></div> <br>
 <br>
 
 **7. Evaluate and troubleshoot** <br>
-Pretty good for less data, more data needed and different positions of user, recognized that training and test data was collected only in sitting position, the model can classify numbers in standing position.<br>
-
-(cf. Warden, P., & Situnayake, D. 2019).
+In conclusion, the trained model is already pretty good for the fewer data that was collected for the project due to time and resource restrictions,. To improve the accuracy of the model more data is needed with different positions of users etc. With the second deployed model, it was recognized that the model performs badly if the user is standing. This was because the training and test data were collected only in a sitting position.<br>
 
 ### How to execute and run
-<br>
 1. [Getting started and setup the Arduino Nano 33 BLE Sense](https://docs.arduino.cc/hardware/nano-33-ble) <br>
 2. Build the hardware setup with the above mentioned components and as shown in the given figure <br>
 3. Import and install the needed libraries as shown below <br>
@@ -172,13 +161,14 @@ Screenshots <br>
 
 <a name="trouble"></a>
 ## 4. Troubleshooting
-
-* enter everything that didn't work
-* Trouble: Edge Impulse lost connection to Arduino device while data acquistion Fix: Flash Arduino
-* Trouble: Add Arduino device to Edge Impulse, connect a fully supported development board -> Fix: https://docs.edgeimpulse.com/docs/development-platforms/officially-supported-mcu-targets/arduino-nano-33-ble-senseLink Tutorial and name tips, execute more than one
-* Trouble: tbd Fix: https://forum.edgeimpulse.com/t/arduino-ble-sense-libraries-invalid-model-for-current-sensor/3730/2 or easier to add this line of code "#define EI_CLASSIFIER_SENSOR EI_CLASSIFIER_SENSOR_ACCELEROMETER  // EINFÜGEN IN JEDE DATEI"
-* Trouble: ERR: EI_CLASSIFIER_RAW_SAMPLES_PER_FRAME should be equal to 3 (the 3 sensor axes) -> Fix: Restart Arduino IDE and upload code again
-* Trouble: Die Schleife hat vorher nämlich darauf gewartet, dass eine serielle Verbindung aufgebaut wird. Das geschieht nur, wenn ein PC angeschlossen ist. Quasi „Solange Seriell nicht existiert, lass die Schleife laufen“ Fix: remove "while (!Serial);"
+This troubleshooting documentation is intended to give information on how to solve and prevent problems that appeared during the implementation process. <br>
+| No. | Trouble    | Fixes   |
+| :---:   | :---: | :---: |
+| #1 | Edge Impulse lost connection to Arduino device while data acquistion  | Flash Arduino  |
+| #2 | Add Arduino device to Edge Impulse, connect a fully supported development board   | [Use tutorial](https://docs.edgeimpulse.com/docs/development-platforms/officially-supported-mcu-targets/arduino-nano-33-ble-sense) and execute more than ones   |
+| #3 | tbd   | [Use forum entry](https://forum.edgeimpulse.com/t/arduino-ble-sense-libraries-invalid-model-for-current-sensor/3730/2) or add this line of code "#define EI_CLASSIFIER_SENSOR EI_CLASSIFIER_SENSOR_ACCELEROMETER"  |
+| #4 | Error "ERR: EI_CLASSIFIER_RAW_SAMPLES_PER_FRAME should be equal to 3 (the 3 sensor axes)" while compiling and uploading code to Arduino   | estart Arduino IDE and upload code again   |
+| #5 | Die Schleife hat vorher nämlich darauf gewartet, dass eine serielle Verbindung aufgebaut wird. Das geschieht nur, wenn ein PC angeschlossen ist. Quasi „Solange Seriell nicht existiert, lass die Schleife laufen“  | Remove "while (!Serial);"   |
 
 <a name="con"></a>
 ## 5. Conclusion and future work
@@ -188,6 +178,7 @@ Screenshots <br>
 * connection/wifi to specific system like door lock etc.
 * custom sounds and words -> connect speaker to Arduino
 * Hyperparameter tuning for our model
+* Train model in correct position of the user, add mor etraining and test data and retrain the model several times to improve
 
 <a name="sour"></a>
 ## 6. Sources
