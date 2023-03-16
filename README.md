@@ -63,7 +63,7 @@ The hardware setup of the projects consists of different components listed below
 * Wooden spoon
 * Sticky tape
 <br>
-The system architecture and hardware setup show how the components are used in the project and how there were build together. The Bread Board and Arduino close-ups show in more detail which elements of the Arduino Nano 33 BLE Sense are used and how everything is connected on the board.
+The system architecture and hardware setup show how the components are used in the project and how they were build together. The Bread Board and Arduino close-ups show in more detail which elements of the Arduino Nano 33 BLE Sense are used and how everything is connected on the board.
 <br>
 <p align="center">
   <img src="https://github.com/moellpau/HandwrittenDigitRecognition/blob/main/images/system_architecture.jpeg"/>
@@ -107,7 +107,7 @@ The following software libraries are used for the implementation of the project.
 The deep learning workflow was implemented based on Warden, P., & Situnayake, D. and using the software suite Edge Impulse. The individual steps of the deep learning workflow are described and explained in more detail below.
 <br> <br>
 **1. Decide on a goal** <br>
-The goal is the handwritten digit recognition of the digits 1, 2 and 3 with an Arduino Nano 33 BLE Sense. The described problem is a classification problem. Classification is a machine learning task that takes a set of input data and returns the probability that this data fits each of a set of known classes. In this example, the classes are: number_1, number_2 and number_3. (Cf. Warden, P., & Situnayake, D. 2019)<br>
+The goal is the handwritten digit recognition of the digits 1, 2 and 3 with an Arduino Nano 33 BLE Sense. The described problem is a classification problem. Classification is a machine learning task that takes a set of input data and returns the probability that this data fits each of a set of known classes. In this example, the classes are: Number_1, Number_2 and Number_3. (Cf. Warden, P., & Situnayake, D. 2019)<br>
 <br>
 **2. Collect a dataset** <br>
 In the second step, the data that is needed has to be identified and the final dataset is created. In our project, the data was collected using the hardware setup above and the drawn digit template in the following figure. The training and test data was split with 80/20 distribution. Overall, 600 data entries are collected, 300 in sitting position and 300 in standing position. The data entries are split equally to all digits (1, 2 and 3). Furthermore, 300 data entries were collected with the right hand and 300 with the left hand. <br>
@@ -124,7 +124,7 @@ In the second step, the data that is needed has to be identified and the final d
 <br>
 
 **3. Design a model architecture** <br>
-In the next step, the model architecture is designed by generating features from data. The settings and features can be found in the following Screenshot of Edge Impulse. (Cf. Warden, P., & Situnayake, D. 2019) <br>
+In the next step, the model architecture is designed by generating features from the data and generating an impulse in EdgeImpulse. The settings and features can be found in the following Screenshot of Edge Impulse. (Cf. Warden, P., & Situnayake, D. 2019) <br>
 
 <p align="center">
   <img src="https://github.com/moellpau/HandwrittenDigitRecognition/blob/main/images/design_model.jpg"/>
@@ -149,7 +149,7 @@ After the model has been converted, it’s ready to deploy! <br>
 <br>
 
 **7. Evaluate and troubleshoot** <br>
-In conclusion, the trained model is already pretty good for the fewer data that was collected for the project due to time and resource restrictions,. To improve the accuracy of the model more data is needed with different positions of users etc. With the second deployed model, it was recognized that the model performs badly if the user is standing. This was because the training and test data were collected only in a sitting position.<br>
+In conclusion, the trained model is already pretty good for the fewer data that was collected for the project due to time and resource restrictions. To improve the accuracy of the model more data is needed with different positions of users etc. With the second deployed model, it was recognized that the model performs badly if the user is standing. This happened because the training and test data were at first collected only in a sitting position.<br>
 
 ### How to execute and run
 1. [Getting started and setup the Arduino Nano 33 BLE Sense](https://docs.arduino.cc/hardware/nano-33-ble) <br>
