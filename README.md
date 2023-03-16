@@ -63,7 +63,7 @@ The hardware setup of the projects consists of different components listed below
 * Wooden spoon
 * Sticky tape
 <br>
-The system architecture and hardware setup show how the components are used in the project and how there were build together. The Arduino close-up shows in more detail which elements of the Arduino Nano 33 BLE Sense are used.
+The system architecture and hardware setup show how the components are used in the project and how there were build together. The Bread Board and Arduino close-ups show in more detail which elements of the Arduino Nano 33 BLE Sense are used and how everything is connected on the board.
 <br>
 <p align="center">
   <img src="https://github.com/moellpau/HandwrittenDigitRecognition/blob/main/images/system_architecture.jpeg"/>
@@ -79,10 +79,18 @@ The system architecture and hardware setup show how the components are used in t
 <br>
 
 <p align="center">
+  <img src="https://github.com/moellpau/HandwrittenDigitRecognition/blob/main/images/close_up_board.png"
+     height="350" />
+</p>
+<div align="center"><i>Figure 5: Close-up Bread Board with Arduino Nano 33 BLE Sense</i></div>
+<br>
+<br>
+
+<p align="center">
   <img src="https://github.com/moellpau/HandwrittenDigitRecognition/blob/main/images/close_up_arduino.png"
      height="350" />
 </p>
-<div align="center"><i>Figure 5: Close-up Arduino Nano 33 BLE Sense</i></div>
+<div align="center"><i>Figure 6: Close-up Arduino Nano 33 BLE Sense</i></div>
 <br>
 <br>
 
@@ -107,12 +115,12 @@ In the second step, the data that is needed has to be identified and the final d
 <p align="center">
   <img src="https://github.com/moellpau/HandwrittenDigitRecognition/blob/main/images/digit_template.jpg"
      height="170" />
-<div align="center"><i>Figure 6: Template of digits</i></div> <br>
+<div align="center"><i>Figure 7: Template of digits</i></div> <br>
 <br>
 
 <p align="center">
   <img src="https://github.com/moellpau/HandwrittenDigitRecognition/blob/main/images/data_collection.jpeg"/>
-<div align="center"><i>Figure 7: Data collection in Edge Impulse</i></div> <br>
+<div align="center"><i>Figure 8: Data collection in Edge Impulse</i></div> <br>
 <br>
 
 **3. Design a model architecture** <br>
@@ -120,7 +128,7 @@ In the next step, the model architecture is designed by generating features from
 
 <p align="center">
   <img src="https://github.com/moellpau/HandwrittenDigitRecognition/blob/main/images/design_model.jpg"/>
-<div align="center"><i>Figure 8: Machine learning model design</i></div> <br>
+<div align="center"><i>Figure 9: Machine learning model design</i></div> <br>
 <br>
 
 **4. Train the model** <br>
@@ -128,7 +136,7 @@ During the training the model learns how to produce the correct output for a giv
 <br>
 <p align="center">
   <img src="https://github.com/moellpau/HandwrittenDigitRecognition/blob/main/images/train_model.jpg"/>
-<div align="center"><i>Figure 9: Model training</i></div> <br>
+<div align="center"><i>Figure 10: Model training</i></div> <br>
 
 **5. Convert the model** <br>
 The last step before running inference is to convert the model in TensorFlow Lite with Edge Impulse. <br>
@@ -137,7 +145,7 @@ The last step before running inference is to convert the model in TensorFlow Lit
 After the model has been converted, it’s ready to deploy! <br>
 <p align="center">
   <img src="https://github.com/moellpau/HandwrittenDigitRecognition/blob/main/images/ML_inference.gif" />
-<div align="center"><i>Figure 10: Run inference</i></div> <br>
+<div align="center"><i>Figure 11: Run inference</i></div> <br>
 <br>
 
 **7. Evaluate and troubleshoot** <br>
@@ -150,13 +158,17 @@ In conclusion, the trained model is already pretty good for the fewer data that 
 <br>
 <p align="center">
   <img src="https://github.com/moellpau/HandwrittenDigitRecognition/blob/main/images/add%20library.png" />
-<div align="center"><i>Figure x: Add Library</i></div> <br>
+<div align="center"><i>Figure 12: Add Library</i></div> <br>
 
 <p align="center">
   <img src="https://github.com/moellpau/HandwrittenDigitRecognition/blob/main/images/examples.png" />
-<div align="center"><i>Figure x: Examples</i></div> <br>
+<div align="center"><i>Figure 13: Examples</i></div> 
+<br>
 4. Open, compile and upload the code to the Arduino Nano 33 BLE Sense <br>
-Screenshots <br>
+<p align="center">
+  <img src="https://github.com/moellpau/HandwrittenDigitRecognition/blob/main/images/compile_upload_code.png" />
+<div align="center"><i>Figure 14: Compile and upload code</i></div> 
+<br>
 5. Start the process with pushing the Push button <br>
 
 <a name="trouble"></a>
