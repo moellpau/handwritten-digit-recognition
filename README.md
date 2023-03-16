@@ -157,7 +157,7 @@ In conclusion, the trained model is already pretty good for the fewer data that 
 3. Import and install the needed libraries as shown below <br>
 <br>
 <p align="center">
-  <img src="https://github.com/moellpau/HandwrittenDigitRecognition/blob/main/images/add%20library.png" />
+  <img src="https://github.com/moellpau/HandwrittenDigitRecognition/blob/main/images/add_library.png" />
 <div align="center"><i>Figure 12: Add Library</i></div> <br>
 
 <p align="center">
@@ -166,8 +166,8 @@ In conclusion, the trained model is already pretty good for the fewer data that 
 <br>
 4. Open, compile and upload the code to the Arduino Nano 33 BLE Sense <br>
 <p align="center">
-  <img src="https://github.com/moellpau/HandwrittenDigitRecognition/blob/main/images/compile_upload_code.png" />
-<div align="center"><i>Figure 14: Compile and upload code height="170"</i></div> 
+  <img src="https://github.com/moellpau/HandwrittenDigitRecognition/blob/main/images/compile_upload_code.png" height="170" />
+<div align="center"><i>Figure 14: Compile and upload code </i></div> 
 <br>
 5. Start the process with pushing the Push button <br>
 
