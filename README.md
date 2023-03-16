@@ -167,7 +167,7 @@ In conclusion, the trained model is already pretty good for the fewer data that 
 4. Open, compile and upload the code to the Arduino Nano 33 BLE Sense <br>
 <p align="center">
   <img src="https://github.com/moellpau/HandwrittenDigitRecognition/blob/main/images/compile_upload_code.png" />
-<div align="center"><i>Figure 14: Compile and upload code</i></div> 
+<div align="center"><i>Figure 14: Compile and upload code height="170"</i></div> 
 <br>
 5. Start the process with pushing the Push button <br>
 
