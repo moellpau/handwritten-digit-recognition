@@ -79,7 +79,7 @@ The system architecture and hardware setup show how the components are used in t
 <br>
 
 <p align="center">
-  <img src="https://github.com/moellpau/HandwrittenDigitRecognition/blob/main/images/close_up_board.png"
+  <img src="https://github.com/moellpau/HandwrittenDigitRecognition/blob/main/images/BreadboardSketch.png"
      height="350" />
 </p>
 <div align="center"><i>Figure 5: Close-up Bread Board with Arduino Nano 33 BLE Sense</i></div>
