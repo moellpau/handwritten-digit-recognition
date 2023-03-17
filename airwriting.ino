@@ -26,7 +26,8 @@
 #define GREEN 23
 #define BLUE 24
 
-#define EI_CLASSIFIER_SENSOR EI_CLASSIFIER_SENSOR_ACCELEROMETER  // EINFÜGEN IN JEDE DATEI
+// need to be put in to set the correct sensor. The library does not use the accelerometer by default
+#define EI_CLASSIFIER_SENSOR EI_CLASSIFIER_SENSOR_ACCELEROMETER
 
 /*
  ** NOTE: If you run into TFLite arena allocation issue.
@@ -101,11 +102,9 @@ void loop() {
   digitalWrite(GREEN, HIGH);
   digitalWrite(BLUE, HIGH);
 
-  int buttonState = digitalRead(buttonPin);
+  int buttonState = digitalRead(buttonPin); // Recognize whether button is pressed
 
-  //buttonState = digitalRead(buttonPin);
-
-  // check if the pushbutton is pressed. If it is, the buttonState is HIGH:
+  // check if the pushbutton is pressed. If it is, the buttonState is LOW:
   if (buttonState == LOW) {
     delay(500);
     ei_printf("\nStarting inferencing in 3 seconds...\n");
@@ -121,7 +120,7 @@ void loop() {
 
     ei_printf("Sampling...\n");
     tone(soundPin, 800, 2000);
-    digitalWrite(GREEN, LOW);  // gelbes Licht geht an während Sampling + Classifien
+    digitalWrite(GREEN, LOW); 
     digitalWrite(RED, LOW);
 
     // Allocate a buffer here for the values we'll read from the IMU
@@ -172,7 +171,7 @@ void loop() {
       ei_printf("    %s: %.5f\n", result.classification[ix].label, result.classification[ix].value);
     }
 
-    // find maximum
+    // find most likely label and put the index into highest_idx
     float highest_value = 0;
     size_t highest_idx = 0;
     for (size_t ix = 0; ix < EI_CLASSIFIER_LABEL_COUNT; ix++) {
@@ -182,12 +181,13 @@ void loop() {
       }
     }
 
-    digitalWrite(GREEN, HIGH);  // gelbes Licht geht aus, weil fertig mit Classifien
+    digitalWrite(GREEN, HIGH);
     digitalWrite(RED, HIGH);
     delay(700);
 
     ei_printf("    Highest Label: %s\n", result.classification[highest_idx].label);
 
+    // let user know which number was recognized (most likely label)
     if (result.classification[highest_idx].label == "Number_1") {
       blinkTimes(1);
     }
@@ -203,6 +203,7 @@ void loop() {
 
     delay(500);
 
+    // check if recognized number (most likely label) is number 1 (correct passcode) and let the user know whether he gave the correct input
     if (result.classification[highest_idx].label == "Number_1") {
       ei_printf("Richtig");
       digitalWrite(GREEN, LOW);
